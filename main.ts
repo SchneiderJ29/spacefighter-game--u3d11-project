@@ -16,7 +16,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        `, playerSprite, 0, -120)
+        `, playerSprite, 0, -100)
 })
 let proj: Sprite = null
 let veloc = 0
