@@ -19,9 +19,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         `, playerSprite, 0, 60)
 })
 let proj: Sprite = null
+let choiceforship = 0
 let playerSprite: Sprite = null
-let choiceforship = shipSel.openShipSelector()
-playerSprite = sprites.create(img`
+
+    choiceforship = shipSel.openShipSelector()
+
+    playerSprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -39,8 +42,8 @@ playerSprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-if (choiceforship == 1) {
-    playerSprite.setImage(img`
+    if (choiceforship == 1) {
+        playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -58,9 +61,9 @@ if (choiceforship == 1) {
         e e e e e e 2 2 4 4 4 5 4 4 2 2 
         e e e e e e 2 2 4 4 4 4 5 4 2 2 
         `)
-    playerSprite.setVelocity(0, 50)
-} else if (choiceforship == 2) {
-    playerSprite.setImage(img`
+        playerSprite.setVelocity(50, 0)
+    } else if (choiceforship == 2) {
+        playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -78,9 +81,9 @@ if (choiceforship == 1) {
         8 8 8 8 8 8 8 8 6 6 6 9 6 6 8 8 
         8 8 8 8 8 8 8 8 6 6 6 6 9 6 8 8 
         `)
-    playerSprite.setVelocity(0, 65)
-} else if (choiceforship == 3) {
-    playerSprite.setImage(img`
+        playerSprite.setVelocity(35, 0)
+    } else if (choiceforship == 3) {
+        playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -98,6 +101,7 @@ if (choiceforship == 1) {
         8 8 8 8 8 8 a a 3 3 3 1 3 3 a a 
         8 8 8 8 8 8 a a 3 3 3 3 1 3 a a 
         `)
-    playerSprite.setVelocity(0, 35)
-}
-controller.moveSprite(playerSprite)
+        playerSprite.setVelocity(65, 0)
+    }
+    controller.moveSprite(playerSprite)
+
