@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "mother ship": "pub:41066-83913-59851-80721"
+        "mother ship": "pub:41066-83913-59851-80721",
+        "shipSelectorExtension_forProj": "pub:31471-54181-98349-13694"
     },
     "files": [
         "main.blocks",

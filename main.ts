@@ -1,1 +1,1 @@
-console.log("Hello world")
+let choice = shipSel.openShipSelector()
