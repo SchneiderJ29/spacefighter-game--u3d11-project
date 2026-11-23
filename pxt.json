@@ -1,10 +1,11 @@
 {
-    "name": "Monday Project",
+    "name": "Monday Project - Copy",
     "description": "",
     "dependencies": {
         "device": "*",
         "mother ship": "pub:41066-83913-59851-80721",
-        "extension for GROUP SPACE PROJECT": "pub:49733-92036-00077-73865"
+        "extension for GROUP SPACE PROJECT": "pub:49733-92036-00077-73865",
+        "shipSelectorExtension_forProj": "pub:31471-54181-98349-13694"
     },
     "files": [
         "main.blocks",
@@ -22,5 +23,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
