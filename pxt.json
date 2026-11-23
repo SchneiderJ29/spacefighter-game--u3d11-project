@@ -3,8 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "extension for GROUP SPACE PROJECT": "pub:44358-75318-63892-60270",
-        "shipSelectorExtension_forProj": "pub:22673-93732-16031-29534"
+        "shipSelectorExtension_forProj": "pub:22673-93732-16031-29534",
+        "extension for GROUP SPACE PROJECT": "pub:93719-65639-13761-27422"
     },
     "files": [
         "main.blocks",
@@ -22,5 +22,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
