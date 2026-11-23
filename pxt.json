@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "shipSelectorExtension_forProj": "pub:31471-54181-98349-13694"
+        "shipSelectorExtension_forProj": "pub:31471-54181-98349-13694",
+        "extension for GROUP SPACE PROJECT": "pub:46625-42034-77406-92229"
     },
     "files": [
         "main.blocks",
