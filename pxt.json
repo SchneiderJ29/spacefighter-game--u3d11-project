@@ -3,8 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "mother ship": "pub:41066-83913-59851-80721",
-        "extension for GROUP SPACE PROJECT": "pub:49733-92036-00077-73865"
+        "extension for GROUP SPACE PROJECT": "pub:49733-92036-00077-73865",
+        "mother ship": "pub:40642-03082-93514-10055"
     },
     "files": [
         "main.blocks",
