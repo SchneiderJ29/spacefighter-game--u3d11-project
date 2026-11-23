@@ -1,10 +1,11 @@
 {
-    "name": "Monday Project - Copy - Copy - Copy",
+    "name": "Monday Project - Copy - Copy - Copy - Copy - Copy",
     "description": "",
     "dependencies": {
         "device": "*",
         "shipSelectorExtension_forProj": "pub:22673-93732-16031-29534",
-        "extension for GROUP SPACE PROJECT": "pub:27943-15352-77170-66366"
+        "extension for GROUP SPACE PROJECT": "pub:27943-15352-77170-66366",
+        "mother ship": "pub:01390-22706-95177-21287"
     },
     "files": [
         "main.blocks",
