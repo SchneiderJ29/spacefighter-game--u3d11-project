@@ -21,6 +21,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 let proj: Sprite = null
 let choiceforship = 0
 let playerSprite: Sprite = null
+let veloc = 0
 
     choiceforship = shipSel.openShipSelector()
 
@@ -61,7 +62,7 @@ let playerSprite: Sprite = null
         e e e e e e 2 2 4 4 4 5 4 4 2 2 
         e e e e e e 2 2 4 4 4 4 5 4 2 2 
         `)
-        playerSprite.setVelocity(50, 0)
+        veloc = 65
     } else if (choiceforship == 2) {
         playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
@@ -81,7 +82,7 @@ let playerSprite: Sprite = null
         8 8 8 8 8 8 8 8 6 6 6 9 6 6 8 8 
         8 8 8 8 8 8 8 8 6 6 6 6 9 6 8 8 
         `)
-        playerSprite.setVelocity(35, 0)
+        veloc = 45
     } else if (choiceforship == 3) {
         playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
@@ -101,7 +102,9 @@ let playerSprite: Sprite = null
         8 8 8 8 8 8 a a 3 3 3 1 3 3 a a 
         8 8 8 8 8 8 a a 3 3 3 3 1 3 a a 
         `)
-        playerSprite.setVelocity(65, 0)
+        veloc = 90
     }
-    controller.moveSprite(playerSprite)
+playerSprite.setPosition(80, 148)
+controller.moveSprite(playerSprite, veloc, 0)
+playerSprite.setStayInScreen(true)
 
