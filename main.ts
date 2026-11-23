@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Enemys = SpriteKind.create()
+}
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     proj = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
@@ -19,13 +22,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         `, playerSprite, 0, 60)
 })
 let proj: Sprite = null
-let choiceforship = 0
 let playerSprite: Sprite = null
-let veloc = 0
-
-    choiceforship = shipSel.openShipSelector()
-
-    playerSprite = sprites.create(img`
+let choiceforship = 0
+choiceforship = shipSel.openShipSelector()
+playerSprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -43,8 +43,8 @@ let veloc = 0
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-    if (choiceforship == 1) {
-        playerSprite.setImage(img`
+if (choiceforship == 1) {
+    playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -62,9 +62,9 @@ let veloc = 0
         e e e e e e 2 2 4 4 4 5 4 4 2 2 
         e e e e e e 2 2 4 4 4 4 5 4 2 2 
         `)
-        veloc = 65
-    } else if (choiceforship == 2) {
-        playerSprite.setImage(img`
+    playerSprite.setVelocity(50, 0)
+} else if (choiceforship == 2) {
+    playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -82,9 +82,9 @@ let veloc = 0
         8 8 8 8 8 8 8 8 6 6 6 9 6 6 8 8 
         8 8 8 8 8 8 8 8 6 6 6 6 9 6 8 8 
         `)
-        veloc = 45
-    } else if (choiceforship == 3) {
-        playerSprite.setImage(img`
+    playerSprite.setVelocity(35, 0)
+} else if (choiceforship == 3) {
+    playerSprite.setImage(img`
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
         . . . . . . . c d . . . . . . . 
@@ -102,9 +102,6 @@ let veloc = 0
         8 8 8 8 8 8 a a 3 3 3 1 3 3 a a 
         8 8 8 8 8 8 a a 3 3 3 3 1 3 a a 
         `)
-        veloc = 90
-    }
-playerSprite.setPosition(80, 148)
-controller.moveSprite(playerSprite, veloc, 0)
-playerSprite.setStayInScreen(true)
-
+    playerSprite.setVelocity(65, 0)
+}
+controller.moveSprite(playerSprite)
