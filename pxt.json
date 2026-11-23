@@ -1,9 +1,9 @@
 {
-    "name": "Spacefighter game | U3D11 Project - Copy",
+    "name": "Spacefighter game | U3D11 Project - Copy - Copy",
     "description": "",
     "dependencies": {
         "device": "*",
-        "mother ship": "pub:41066-83913-59851-80721"
+        "mother ship": "pub:51832-30015-61448-62985"
     },
     "files": [
         "main.blocks",
